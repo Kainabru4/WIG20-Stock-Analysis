@@ -1,15 +1,39 @@
-# Ignore virtual environment
-venv/
-
-# Ignore Python cache files
+# Python bytecode and cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Ignore logs
-*.log
+# Virtual environment
+venv/
+.env/
+env/
 
-# Ignore system files
-.DS_Store
+# VS Code settings
+.vscode/
+
+# Logs and outputs
+*.log
+lstm_directory/
+
+# IPython history
+profile_default/
+ipython_config.py
+
+# Unit test cache
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Coverage reports
+htmlcov/
+.coverage
+.cache

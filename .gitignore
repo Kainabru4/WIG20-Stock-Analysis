@@ -16,6 +16,7 @@ env/
 
 # Logs and outputs
 *.log
+logs/fit
 lstm_directory/
 
 # IPython history

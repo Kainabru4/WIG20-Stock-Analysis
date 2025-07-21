@@ -1,6 +1,8 @@
-# Sentiment-Driven Market Prediction
+# Comparative Analysis of Machine Learning Models Effectiveness in Predicting Stock Prices
 
-This project explores the relationship between financial sentiment and stock market movements using NLP and time-series modeling. It involves preprocessing textual and stock data, performing exploratory data analysis, calculating technical indicators, and building predictive models using deep learning techniques.
+This project aims to compare SVM's and LSTM's ability to correctly predict time-series data, more precisely prices of WIG20 stock index. It does so using different datasets and time frames. The prediction is based on technical idicators reflecting movement of prices and on sentiment of financial articles related to the index. Project involves preprocessing textual and stock data, performing exploratory data analysis, calculating technical indicators, and building predictive models using deep learning techniques as well as statistical test confirming validity of prediction.
+
+---
 
 ---
 
@@ -22,8 +24,6 @@ data/
 │   ├── slownikWydzwieku.csv
 │   ├── wig20_5d.csv
 │   └── wig20_5w.csv
-logs/                            # Training logs
-lstm_directory/                  # LSTM tuning files
 notebooks/                       # Jupyter notebooks for development
 │   ├── datasets.ipynb
 │   ├── eda.ipynb
@@ -39,16 +39,16 @@ requirements.txt                 # Required packages
 
 Clone the repository:
 
-```bash
-git clone https://github.com/your-username/sentiment-market-prediction.git
-cd sentiment-market-prediction
+```powershell
+git clone https://github.com/your-username/sentiment-market-prediction.git](https://github.com/Kainabru4/WIG20-Stock-Analysis)
+cd WIG20-stock-market prediction
 ```
 
 Create a virtual environment and install dependencies:
 
-```bash
+```powershell
 python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+.\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -56,11 +56,11 @@ pip install -r requirements.txt
 
 ## 🧪 Notebooks Overview
 
-- `datasets.ipynb`: Loads and merges raw sentiment and financial data.
 - `eda.ipynb`: Visualizes sentiment trends and stock performance.
 - `indicators.ipynb`: Calculates technical indicators (e.g. RSI, MACD).
-- `models.ipynb`: Trains and evaluates machine learning/LSTM models.
 - `nlp.ipynb`: Applies NLP to extract sentiment from news articles.
+- `datasets.ipynb`: Merges sentiment and financial data into apropiate dataset.
+- `models.ipynb`: Trains and evaluates machine learning/LSTM models.
 
 ---
 
@@ -77,8 +77,8 @@ pip install -r requirements.txt
 The project utilizes:
 - Sentiment analysis from news articles.
 - Feature engineering from technical indicators.
-- LSTM models for time-series forecasting.
-- Evaluation metrics such as accuracy, precision, and AUC.
+- SVM and LSTM models for time-series forecasting.
+- Evaluation metrics.
 
 ---
 
@@ -94,20 +94,6 @@ See `requirements.txt` for a full list of dependencies, including:
 
 ---
 
-## 👥 Authors
-
-- [Your Name] - NLP & Modeling
-- [Collaborator] - Data Collection & EDA
+## 👥 Author: Filip Urbaniak
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🙏 Acknowledgements
-
-- NBP (National Bank of Poland) for sentiment dictionary
-- Warsaw Stock Exchange (GPW) for WIG20 data
